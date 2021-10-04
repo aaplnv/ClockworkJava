@@ -1,6 +1,8 @@
 package com.nomust;
 
 import com.nomust.Tasks.Task;
+import com.nomust.Tasks.Task1.Task1;
+import com.nomust.Tasks.Task2.Task2;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,6 +18,8 @@ public class Main {
         // This is an array of tasks
         // Connect new Tasks and Labs here
         List<Task> tasks = new ArrayList<>();
+        tasks.add(new Task1());
+        tasks.add(new Task2());
 
         int key = 0;
         do {
