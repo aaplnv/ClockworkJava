@@ -1,8 +1,11 @@
 package com.nomust;
 
+import com.nomust.Tasks.Lab1.Lab1;
+import com.nomust.Tasks.Lab2.Lab2;
 import com.nomust.Tasks.Task;
 import com.nomust.Tasks.Task1.Task1;
 import com.nomust.Tasks.Task2.Task2;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,7 +23,10 @@ public class Main {
         List<Task> tasks = new ArrayList<>();
         tasks.add(new Task1());
         tasks.add(new Task2());
+        tasks.add(new Lab1());
+        tasks.add(new Lab2());
 
+        // Run main menu
         int key = 0;
         do {
             System.out.println("========== Main menu ==========");
