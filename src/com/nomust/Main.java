@@ -3,7 +3,6 @@ package com.nomust;
 import com.nomust.Tasks.Lab1.Lab1;
 import com.nomust.Tasks.Lab2.Lab2;
 import com.nomust.Tasks.Lab3.Lab3;
-import com.nomust.Tasks.Task;
 import com.nomust.Tasks.Task1.Task1;
 import com.nomust.Tasks.Task2.Task2;
 import com.nomust.Tasks.Task3.Task3;
@@ -12,7 +11,6 @@ import com.nomust.Tasks.Task4.Task4;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class Main {
 

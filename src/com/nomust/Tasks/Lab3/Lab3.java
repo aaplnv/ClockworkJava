@@ -10,6 +10,7 @@ public class Lab3 extends Task {
 
     @Override
     public void Run() {
+        xShop.catalog();
 
         pressAnyKey();
     }
