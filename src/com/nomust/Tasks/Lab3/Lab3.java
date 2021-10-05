@@ -1,16 +1,15 @@
-package com.nomust.Tasks.Lab2;
+package com.nomust.Tasks.Lab3;
 
 import com.nomust.Tasks.Task;
 
-public class Lab2 extends Task {
+public class Lab3 extends Task {
     @Override
     public String getName() {
-        return "Lab 2";
+        return "Lab 3";
     }
 
     @Override
     public void Run() {
-        TestCircle.main(null);
 
         pressAnyKey();
     }

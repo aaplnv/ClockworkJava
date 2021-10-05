@@ -1,7 +1,9 @@
 package com.nomust.Tasks;
 
-public abstract class Task {
-    public abstract String GetName();
+import com.nomust.IExecutable;
+
+public abstract class Task implements IExecutable {
+    public abstract String getName();
     public abstract void Run();
 
     public void pressAnyKey() {

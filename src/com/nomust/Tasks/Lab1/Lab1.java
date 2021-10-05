@@ -5,7 +5,7 @@ import com.nomust.Tasks.Task;
 public class Lab1 extends Task {
     private static final int[] array = {46, 22, 16, 94, 555, 12, 99, 438, 1, 1};
     @Override
-    public String GetName() {
+    public String getName() {
         return "Lab 1";
     }
 
