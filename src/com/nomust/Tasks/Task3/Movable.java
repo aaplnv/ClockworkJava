@@ -1,7 +1,7 @@
 package com.nomust.Tasks.Task3;
 
 public interface Movable {
-    public void moveUp();
+    void moveUp();
     public void moveDown();
     public void moveLeft();
     public void moveRight();

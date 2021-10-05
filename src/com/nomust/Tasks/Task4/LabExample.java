@@ -20,7 +20,8 @@ class LabExample extends JFrame {
         super("Football");
         setLayout(new FlowLayout());
         setSize(250 ,150);
-
+        /*GridLayout gridLayout = new GridLayout(3, 3);
+        gridLayout.*/
         add(realMadrid);
         add(acMilan);
         add(result);

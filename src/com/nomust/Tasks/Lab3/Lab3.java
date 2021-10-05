@@ -5,7 +5,7 @@ import com.nomust.Tasks.Task;
 public class Lab3 extends Task {
     @Override
     public String getName() {
-        return "Lab 3 (new)";
+        return "Lab 3";
     }
 
     @Override

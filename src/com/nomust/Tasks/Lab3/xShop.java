@@ -14,8 +14,8 @@ public class xShop {
         catalog.add(new Condom("Шарики для метания с крыши", 40, 30));
 
         System.out.println("Welcome to xShop!");
-        catalog.forEach(item -> {
-            System.out.println(item.toString());
-        });
+        catalog.forEach(item ->
+            System.out.println(item)
+        );
     }
 }

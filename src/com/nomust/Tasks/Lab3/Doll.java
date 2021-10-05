@@ -6,7 +6,7 @@ public class Doll extends Item {
         super(name, price);
         this.size = size;
     }
-    @Override
+  @Override
     public String toString() {
         return "Doll: " +
                 "size=" + size +
