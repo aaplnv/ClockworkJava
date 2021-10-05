@@ -12,7 +12,7 @@ public class TestShape {
         System.out.println(s1.getPerimeter());
         System.out.println(s1.getColor());
         System.out.println(s1.isFilled());
-       // System.out.println(s1.getRadius()); // getRadius is not implemented in Shape
+        // System.out.println(s1.getRadius()); // getRadius is not implemented in Shape
         Circle c1 = (Circle)s1;
         System.out.println(c1);
         System.out.println(c1.getArea());
@@ -25,7 +25,7 @@ public class TestShape {
         System.out.println(s3); System.out.println(s3.getArea());
         System.out.println(s3.getPerimeter());
         System.out.println(s3.getColor());
-       // System.out.println(s3.getLength());// Again. getLength is not implemented in Shape
+       // System.out.println(s3.getLength()); // Again. getLength is not implemented in Shape
         Rectangle r1 = (Rectangle)s3;
         System.out.println(r1);
         System.out.println(r1.getArea());
@@ -44,7 +44,7 @@ public class TestShape {
         System.out.println(r2.getColor());
        // System.out.println(r2.getSide()); // And again. getSide is not implemented in Rectangle
         System.out.println(r2.getLength());
-        Shape.Rectangle.Square sq1 = (Shape.Rectangle.Square)r2;
+        Square sq1 = (Square)r2;
         System.out.println(sq1);
         System.out.println(sq1.getArea());
         System.out.println(sq1.getColor());
