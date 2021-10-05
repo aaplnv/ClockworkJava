@@ -32,7 +32,7 @@ class LabExample extends JFrame {
                 rmadrir++;
                 result.setText("Result " + rmadrir + " X " + milan);
                 lastScorer.setText("Last Scorer: Real Madrid");
-                winner.setText("Winner: " + ((rmadrir > milan) ? "Real Madrid" : "AC Milan"));
+                winner.setText("Winner: " + ((rmadrir > milan) ? "Real Madrid" : (rmadrir == milan) ? "DRAW" : "AC Milan"));
             }
         });
 
@@ -42,10 +42,11 @@ class LabExample extends JFrame {
                 milan++;
                 result.setText("Result " + rmadrir + " X " + milan);
                 lastScorer.setText("Last Scorer: AC Milan");
-                winner.setText("Winner: " + ((rmadrir > milan) ? "Real Madrid" : "AC Milan"));
+                winner.setText("Winner: " + ((rmadrir > milan) ? "Real Madrid" : (rmadrir == milan) ? "DRAW" : "AC Milan"));
             }
         });
         setVisible(true);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
     public static void openWindow() {
