@@ -1,8 +1,5 @@
 package com.nomust.Tasks.Lab4;
 
-import com.nomust.Tasks.Lab3.Condom;
-import com.nomust.Tasks.Lab3.Doll;
-import com.nomust.Tasks.Lab3.Item;
 import com.nomust.Tasks.Task;
 
 import java.util.ArrayList;
@@ -11,7 +8,7 @@ import java.util.List;
 public class Lab4 extends Task {
     @Override
     public String getName() {
-        return "Lab 4";
+        return "Lab 4 (new)";
     }
 
     @Override

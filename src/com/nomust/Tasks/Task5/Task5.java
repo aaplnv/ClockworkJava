@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Task5 extends Task {
     @Override
     public String getName() {
-        return "Task 5";
+        return "Task 5 (new)";
     }
 
     @Override
@@ -20,7 +20,7 @@ public class Task5 extends Task {
     static void getCount(int max, int count)
     {
         Scanner keyboard = new Scanner(System.in);
-        int n = keyboard.nextInt();
+        int n = keyboard.nextInt(); // TODO: Keyboard reader with error handler (how to code it without most of console functions?)
         if (n == 0) {
             System.out.println(max + ", " + count);
         }
