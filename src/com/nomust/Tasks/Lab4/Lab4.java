@@ -13,7 +13,6 @@ public class Lab4 extends Task {
 
     @Override
     public void Run() {
-
             List<INameable> list = new ArrayList<>();
             list.add(new President("Vladimir Vladimirovich"));
             list.add(new President("Vladimir Vladimirovich (Udmurt)"));
