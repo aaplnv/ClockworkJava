@@ -24,6 +24,5 @@ public class MainFrame extends JFrame {
     private void next(){
         imgLabel.setIcon(new ImageIcon(getClass().getResource(String.format("image_%03d", ++i) + ".jpg")));
         if (i == 74) i = 0;
-
     }
 }
