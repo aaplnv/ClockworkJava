@@ -7,7 +7,7 @@ import javax.swing.*;
 public class Lab5 extends Task {
     @Override
     public String getName() {
-        return "Lab5 (new)";
+        return "Lab 5 (new)";
     }
 
     @Override

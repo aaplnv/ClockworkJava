@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Task5 extends Task {
     @Override
     public String getName() {
-        return "Task 5 (new)";
+        return "Task 5";
     }
 
     @Override

@@ -8,7 +8,7 @@ import java.util.List;
 public class Lab4 extends Task {
     @Override
     public String getName() {
-        return "Lab 4 (new)";
+        return "Lab 4";
     }
 
     @Override
