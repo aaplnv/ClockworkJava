@@ -7,13 +7,12 @@
 
 package com.nomust.Tasks.Lab6;
 
-import javax.swing.JComboBox;
-import javax.swing.JFrame;
-import javax.swing.JTextArea;
-import javax.swing.WindowConstants;
+import javax.swing.*;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class App extends JFrame {
 
@@ -21,35 +20,47 @@ public class App extends JFrame {
         setSize(1000, 480);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
+
         JTextArea textArea = new JTextArea();
         textArea.setFont(new Font("Times New Roman", Font.PLAIN, 12));
 
-        String[] colorNames = {"Black color", "Red color", "Blue color"};
-        JComboBox<String> colors = new JComboBox<>(colorNames);
-        colors.setSelectedIndex(0);
 
-        String[] fontNames = {"Times New Roman", "MS Sans Serif", "Courier New"};
-        JComboBox<String> fonts = new JComboBox<>(fontNames);
-        fonts.setSelectedIndex(0);
+        var colorMenu = new JMenu("Colors");
 
-        fonts.addItemListener(e -> textArea.setFont(new Font(fontNames[fonts.getSelectedIndex()], Font.PLAIN, 12)));
+        var blackColor = new JMenuItem("Black");
+        colorMenu.add(blackColor);
+        blackColor.addActionListener(e -> textArea.setForeground(Color.BLACK));
 
-        colors.addItemListener(e -> {
-            switch (colors.getSelectedIndex()){
-                case 0:
-                    textArea.setForeground(Color.BLACK);
-                    break;
-                case 1:
-                    textArea.setForeground(Color.RED);
-                    break;
-                case 2:
-                    textArea.setForeground(Color.BLUE);
-                    break;
-            }
-        });
+        var redColor = new JMenuItem("Red");
+        colorMenu.add(redColor);
+        redColor.addActionListener(e -> textArea.setForeground(Color.RED));
 
-        getContentPane().add(colors, BorderLayout.BEFORE_FIRST_LINE);
-        getContentPane().add(fonts, BorderLayout.BEFORE_LINE_BEGINS);
+        var blueColor = new JMenuItem("Blue");
+        colorMenu.add(blueColor);
+        blueColor.addActionListener(e -> textArea.setForeground(Color.BLUE));
+
+
+        var fontMenu = new JMenu("Fonts");
+
+        var timesNewRomanFont = new JMenuItem("Times New Roman");
+        fontMenu.add(timesNewRomanFont);
+        timesNewRomanFont.addActionListener(e -> textArea.setFont(new Font("Times New Roman", Font.PLAIN, 12)));
+
+        var msSansSerif = new JMenuItem("MS Sans Serif");
+        fontMenu.add(msSansSerif);
+        msSansSerif.addActionListener(e -> textArea.setFont(new Font("MS Sans Serif", Font.PLAIN, 12)));
+
+        var courierNew = new JMenuItem("Courier New");
+        fontMenu.add(courierNew);
+        courierNew.addActionListener(e -> textArea.setFont(new Font("Courier New", Font.PLAIN, 12)));
+
+
+        JMenuBar menu = new JMenuBar();
+        menu.add(colorMenu);
+        menu.add(fontMenu);
+
+
+        getContentPane().add(menu, BorderLayout.NORTH);
         getContentPane().add(textArea);
         setVisible(true);
     }
