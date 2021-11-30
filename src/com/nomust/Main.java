@@ -12,6 +12,7 @@ import com.nomust.Tasks.Task3.Task3;
 import com.nomust.Tasks.Task4.Task4;
 import com.nomust.Tasks.Task5.Task5;
 import com.nomust.Tasks.Task6.Task6;
+import com.nomust.Tasks.Task7.Task7;
 
 
 import java.util.ArrayList;
@@ -36,6 +37,7 @@ public class Main {
         tasks.add(new Task6());
         tasks.add(new Lab5());
         tasks.add(new Lab6());
+        tasks.add(new Task7());
 
         Menu mainMenu = new Menu(tasks);
 
