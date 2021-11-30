@@ -19,6 +19,8 @@ public class Task6 extends Task {
         var ivanov = new Student(3, 15);
 
         var comparator = new StudentComparator();
-        System.out.println(comparator.compare(frolov, ivanov));
+        System.out.println("GPA difference: " + comparator.compare(frolov, ivanov));
+
+        pressAnyKey();
     }
 }

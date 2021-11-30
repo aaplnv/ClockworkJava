@@ -11,7 +11,7 @@ public class MainFrame extends JFrame {
     private JLabel imgLabel;
     private int i = 1;
 
-    public MainFrame(){
+    public MainFrame() {
         this.setSize(600, 500);
         imgLabel = new JLabel("", new ImageIcon(getClass().getResource("image_001.jpg")), SwingConstants.CENTER);
 
