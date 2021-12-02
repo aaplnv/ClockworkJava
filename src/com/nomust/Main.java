@@ -6,6 +6,7 @@ import com.nomust.Tasks.Lab3.Lab3;
 import com.nomust.Tasks.Lab4.Lab4;
 import com.nomust.Tasks.Lab5.Lab5;
 import com.nomust.Tasks.Lab6.Lab6;
+import com.nomust.Tasks.Lab7.Lab7;
 import com.nomust.Tasks.Task1.Task1;
 import com.nomust.Tasks.Task2.Task2;
 import com.nomust.Tasks.Task3.Task3;
@@ -38,6 +39,7 @@ public class Main {
         tasks.add(new Lab5());
         tasks.add(new Lab6());
         tasks.add(new Task7());
+        tasks.add(new Lab7());
 
         Menu mainMenu = new Menu(tasks);
 
