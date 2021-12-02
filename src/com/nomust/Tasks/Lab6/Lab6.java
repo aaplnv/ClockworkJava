@@ -6,7 +6,7 @@ public class Lab6 extends Task {
 
     @Override
     public String getName() {
-        return "Lab 6 (new)";
+        return "Lab 6 (fixed)";
     }
 
     @Override
